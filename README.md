@@ -14,7 +14,7 @@ Da biste instalirali i postavili projekt, slijedite ove korake:
 ## Pokretanje
 1. Otvorite projekt u Visual Studio Code-u
 2. Otvorite terminal i u njemu upišite naredbe za pokretanje servera:
-   cd (put-do-projekta)/server
+   \ncd (put-do-projekta)/server
    npm init
    npm install
    npm install express
