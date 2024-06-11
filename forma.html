@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- postavlja kodnu stranicu na UTF-8, ovo je valjda zbog hrvatske abecede itd. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- postavlja prikazni prozor za responzivni dizajn -->
+    <title>KOLOKVIJ 2</title> <!-- naslov prozora -->
+    <link rel="stylesheet" href="forma.css"> <!-- povezuje vanjsku CSS datoteku -->
+</head>
+<body>
+    <div class="container"> <!-- glavni kontejner za cijeli sadržaj -->
+        <h2>Prijava</h2> <!-- naslov okvira -->
+        <form> <!-- forma za ispunjavanje -->
+            <!--?  type: postavlja tip input polja -->
+            <!--?  id: postavlja jednistveni identifikator kako bi se moglo pristupiti i raditi s ovim elementom -->
+            <!--?  name: postavlja ime polja te se koristi kao ključ za pristup vrijednosti unesenog podatka -->
+            <!--?  placeholder: prikazuje privremeni tekst unutar polja dok korisnik ne unese vlastiti -->
+            <!--?  autocomplete: omogućava na pregledniku ponudu prijedloga na temelju prethodno unesenih korisničkih imena -->
+            <!--?  required: označava da je ovo polje obavezno za ispuniti tj. preglednik neće dopustiti slanje formulara ako je prazno -->
+            <input type="text" id="username" name="username" placeholder="Korisničko ime" autocomplete="username" required>
+            <input type="password" id="password" name="password" placeholder="Lozinka" autocomplete="new-password" required>
+            <button id="button">Prijavi se</button> <!-- botun za slanje formulara -->
+        </form>
+        <div id="poruka"> <!-- div za prikaz poruke -->
+            <p>
+                <!-- poruka -->
+            </p>
+        </div>
+    </div>
+
+    <script src="kod.js"></script> <!-- povezuje vanjsku JavaScript datoteku -->
+    
+</body>
+</html>

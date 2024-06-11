@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex; /* postavlja flexbox layout za tijelo stranice */
+    justify-content: center; /* poravnava sadržaj horizontalno u centru */
+    align-items: center; /* poravnava sadržaj vertikalno u centru */
+    height: 100vh; /* postavlja visinu tijela na 100% visine preglednika */
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+.container h2 {
+    margin-bottom: 20px;
+    color: rgb(86, 127, 141);
+}
+.container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.container button {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(108, 163, 181);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: rgb(84, 126, 140);
+}
+#poruka {
+    color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- postavlja kodnu stranicu na UTF-8, ovo je valjda zbog hrvatske abecede itd. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- postavlja prikazni prozor za responzivni dizajn -->
+    <title>KOLOKVIJ 1</title> <!-- naslov prozora -->
+    <link rel="stylesheet" href="index.css"> <!-- povezuje vanjsku CSS datoteku -->
+    <!-- dodan font s vanjskog izvora google fonts -->
+    <style>
+        @font-face {
+            font-family: "Raleway";
+            src: url("Raleway/Raleway-VariableFont_wght.ttf");
+        }
+    </style>
+</head>
+<body>
+    <!-- glavni kontejner za cijeli sadržaj -->
+    <div class="grid-container">
+        <!-- treba bit id umisto class za dijelove stranice, zbog pozivanja u navigaciji pomoću znaka # -->
+        <!-- zaglavlje -->
+        <header id="zaglavlje">
+            <p>Programiranje mrežnih aplikacija, 1. kolokvij</p>
+        </header>
+        <!-- navigacija -->
+        <nav id="navigacija">
+            <ul>
+                <li><a href="#zaglavlje">Zaglavlje</a></li>
+                <li><a href="#navigacija">Navigacija</a></li>
+                <li><a href="#osobnipodatci">Osobni podatci</a></li>
+                <li><a href="#kratkizivotopis">Kratki životopis</a></li>
+                <li><a href="#galerijaslika">Galerija slika</a></li>
+                <li><a href="#podnozje">Podnožje</a></li>
+            </ul>
+        </nav>
+        <!-- osobni podatci -->
+        <div id="osobnipodatci">
+            <img src="slike/ikona.png" alt="ja"> <!--?  alternativni tekst: kratak opis slike koji se prikazuje u slučaju da ona nije dostupna, a i za slijepce koji koriste čitače ekrana -->
+            <p class="naglasi">
+                Datum rođenja: 07. prosinca 2001.<br>
+                Adresa: Ulica abc 1<br>
+                Studijski program: informatika<br>
+                JMBAG: 123456789
+            </p>
+        </div>
+        <!-- kratki zivotopis -->
+        <div id="kratkizivotopis">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <!-- galerija slika -->
+        <div id="galerijaslika">
+            <img src="slike/cvijet1.png" alt="cvijet 1">
+            <img src="slike/cvijet2.png" alt="cvijet 2">
+            <img src="slike/cvijet3.png" alt="cvijet 3">
+            <img src="slike/cvijet4.png" alt="cvijet 4">
+            <img src="slike/cvijet5.png" alt="cvijet 5">
+            <img src="slike/cvijet6.png" alt="cvijet 6">
+            <img src="slike/cvijet7.png" alt="cvijet 7">
+            <img src="slike/cvijet8.png" alt="cvijet 8">
+        </div>
+        <!-- podnozje -->
+        <footer id="podnozje">
+            <p>
+                25. ožujka 2024.<br>
+                lokacija: <span class="adresa">Ulica abc 1</span><br>
+                Prirodoslovno-matematički fakultet u Splitu, Ulica Ruđera Boškovića 33
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
